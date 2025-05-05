@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/serve_config_net.props" />
+</Project>
