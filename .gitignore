@@ -1,0 +1,9 @@
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+.vagrant/
+__pycache__/
+*.pyc
+*.log
+set-proxmod-env.sh
