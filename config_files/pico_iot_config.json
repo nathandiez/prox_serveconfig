@@ -87,7 +87,7 @@
     },
     "api_config": {
       "enabled": true,
-      "url": "https://iot-azure-api-app-raraid.azurewebsites.net/api/ingest",
+      "url": "https://iot-azure-api-app-ned.azurewebsites.net/api/ingest",
       "api_key": "SuperSecretKey123!ChangeMeLater",
       "timeout_ms": 10000,
       "retry_delay_ms": 5000
