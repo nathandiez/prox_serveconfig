@@ -200,7 +200,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     publisher = "Canonical"
     offer     = "0001-com-ubuntu-server-focal"
     sku       = "20_04-lts"
-    version   = "latest"
+    version   = "20.04.202504250"
   }
 
   custom_data = base64encode(<<-EOT
