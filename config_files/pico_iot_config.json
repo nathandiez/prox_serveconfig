@@ -33,7 +33,7 @@
     "remote_logger": {
       "http": {
         "enabled": false,
-        "url": "http://esdserveconfig.local:5000/terminal"
+        "url": "http://esdv1-serveconfig.local:5000/terminal"
       },
       "mqtt": {
         "enabled": false,
@@ -76,18 +76,18 @@
   "system_global_config": {
     "check_config_file_period": 10000,
     "mqtt_config": {
-      "enabled": false,
-      "broker": "192.168.6.87",
+      "enabled": true,
+      "broker": "192.168.6.132",
       "port": 1883,
       "user": "",
       "password": "",
-      "base_topic": "iots4",
+      "base_topic": "iots6",
       "ssl": false,
       "reconnect_delay": 10000
     },
     "api_config": {
-      "enabled": true,
-      "url": "http://iot-api-4serveconfig.azurewebsites.net/api/ingest",
+      "enabled": false,
+      "url": "https://iot-azure-api-app-raraid.azurewebsites.net/api/ingest",
       "api_key": "SuperSecretKey123!ChangeMeLater",
       "timeout_ms": 10000,
       "retry_delay_ms": 5000
