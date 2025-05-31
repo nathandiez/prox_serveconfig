@@ -33,7 +33,7 @@
     "remote_logger": {
       "http": {
         "enabled": false,
-        "url": "http://esdv1-serveconfig.local:5000/terminal"
+        "url": "http://your-config-server.local:5000/terminal"
       },
       "mqtt": {
         "enabled": false,
@@ -77,7 +77,7 @@
     "check_config_file_period": 10000,
     "mqtt_config": {
       "enabled": true,
-      "broker": "192.168.6.132",
+      "broker": "your-mqtt-broker-ip",
       "port": 1883,
       "user": "",
       "password": "",
@@ -87,8 +87,8 @@
     },
     "api_config": {
       "enabled": false,
-      "url": "https://iot-azure-api-app-raraid.azurewebsites.net/api/ingest",
-      "api_key": "SuperSecretKey123!ChangeMeLater",
+      "url": "https://your-api-endpoint.com/api/ingest",
+      "api_key": "your-api-key",
       "timeout_ms": 10000,
       "retry_delay_ms": 5000
     }

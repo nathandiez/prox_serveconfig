@@ -102,7 +102,7 @@ else
     START_TIME=$(date +%s)
 
     while true; do
-      if ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=5 nathan@"$IP" echo ready 2>/dev/null; then
+      if ssh -o StrictHostKeyChecking=no -o BatchMode=yes -o ConnectTimeout=5 your-username@"$IP" echo ready 2>/dev/null; then
         echo "SSH is available!"
         break
       fi

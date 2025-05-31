@@ -10,7 +10,7 @@
     app_source_dir: "../../src/" # Relative path to source code on control machine
     config_source_dir: "../../config_files/" # Relative path to config files on control machine
     config_dir: /etc/serve_config # Directory for config files on host (mounted into container)
-    app_user: "{{ ansible_user | default('nathan') }}" # User to own app/config dirs (defaults to connection user)
+    app_user: "{{ ansible_user | default('your-username') }}" # User to own app/config dirs (defaults to connection user)
 
   tasks:
     # --------------------------------------------------------------------------
@@ -70,7 +70,7 @@
         dest: /etc/avahi/avahi-daemon.conf.d/10-hostname.conf
         content: |
           [server]
-          host-name=nedv1-serveconfig
+          host-name=your-config-server
 
           [publish]
           publish-hinfo=yes

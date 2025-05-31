@@ -5,7 +5,7 @@
   vars:
     config_source_dir: "../../config_files/"
     config_dir: /etc/serve_config
-    app_user: "{{ ansible_user | default('nathan') }}"  # Add this line
+    app_user: "{{ ansible_user | default('your-username') }}"  # Add this line
 
   tasks:
     - name: Copy config files to volume directory
