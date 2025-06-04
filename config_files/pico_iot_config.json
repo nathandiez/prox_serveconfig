@@ -3,8 +3,18 @@
     {
       "device_id": "Attic06",
       "name": "Attic",
+      "enabled": 0
+    },
+    {
+      "device_id": "Exterior01",
+      "name": "Exterior",
       "enabled": 1
     },
+    {
+      "device_id": "BackDoor08",
+      "name": "BackDoor",
+      "enabled": 1
+    },        
     {
       "device_id": "MasterBed03",
       "name": "MasterBed",
@@ -18,8 +28,8 @@
     "switch_check_period": 1000,
     "temperature_check_period": 2000,
     "i2c_temp_sensor_pins": {
-      "i2c_scl": 17,
-      "i2c_sda": 16
+      "i2c_scl": 5,
+      "i2c_sda": 4
     },
     "onewire_ds18b20_pin": {
       "pin": 22
@@ -33,7 +43,7 @@
     "remote_logger": {
       "http": {
         "enabled": false,
-        "url": "http://your-config-server.local:5000/terminal"
+        "url": "http://esdv1-serveconfig.local:5000/terminal"
       },
       "mqtt": {
         "enabled": false,
@@ -77,7 +87,7 @@
     "check_config_file_period": 10000,
     "mqtt_config": {
       "enabled": true,
-      "broker": "your-mqtt-broker-ip",
+      "broker": "74.235.232.127",
       "port": 1883,
       "user": "",
       "password": "",
@@ -87,8 +97,8 @@
     },
     "api_config": {
       "enabled": false,
-      "url": "https://your-api-endpoint.com/api/ingest",
-      "api_key": "your-api-key",
+      "url": "https://iot-azure-api-app-raraid.azurewebsites.net/api/ingest",
+      "api_key": "SuperSecretKey123!ChangeMeLater",
       "timeout_ms": 10000,
       "retry_delay_ms": 5000
     }
