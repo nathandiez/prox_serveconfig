@@ -26,11 +26,11 @@ terraform init
 
 echo "Creating/updating infrastructure..."
 if [ "$USE_LOCAL_EXEC" = true ]; then
-    terraform apply -var="enable_local-exec=true" -auto-approve
+    terraform apply -var="enable_local-exec=true" -var="proxmox_endpoint=$PROXMOX_VE_ENDPOINT" -auto-approve
     DEPLOYMENT_METHOD="integrated provisioners"
     SERVICE_IP="Check the terraform output above for IP and service details"
 else
-    terraform apply -var="enable_local-exec=false" -auto-approve
+    terraform apply -var="enable_local-exec=false" -var="proxmox_endpoint=$PROXMOX_VE_ENDPOINT" -auto-approve
     DEPLOYMENT_METHOD="manual deployment with Ansible"
     
     # Manual deployment logic

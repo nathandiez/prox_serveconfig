@@ -43,7 +43,7 @@ if [[ -f "terraform.tfstate" ]]; then
   
   # Destroy the infrastructure
   echo "Running terraform destroy..."
-  terraform destroy -auto-approve
+  terraform destroy -var="proxmox_endpoint=$PROXMOX_VE_ENDPOINT" -auto-approve
   
   echo "Infrastructure destroyed successfully."
 else
