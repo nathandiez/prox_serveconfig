@@ -17,7 +17,7 @@ variable "enable_local-exec" {
 }
 
 provider "proxmox" {
-  endpoint = "https://192.168.5.6:8006"
+  endpoint = var.proxmox_endpoint
   insecure = true
 }
 
@@ -96,4 +96,10 @@ output "service_url" {
 output "config_endpoint" {
   value = local.valid_ip != null ? "http://${local.valid_ip}:5000/pico_iot_config.json" : "Not yet available - VM may still be starting"
   description = "Configuration endpoint URL"
+}
+# Variables from environment
+variable "proxmox_endpoint" {
+  description = "Proxmox VE endpoint URL"
+  type        = string
+  default     = ""
 }

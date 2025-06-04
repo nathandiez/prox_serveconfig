@@ -1,4 +1,22 @@
+# Terraform
 terraform.tfstate*
 terraform/.terraform/
-ansible/inventory/hosts
+.terraform.lock.hcl
+
+# Environment and secrets
+.env
 set-proxmox-env.sh
+
+# System files
+.DS_Store
+*.backup
+
+# IDE files
+.vscode/
+.idea/
+
+# Ansible
+ansible/inventory/hosts
+
+# Logs
+*.log

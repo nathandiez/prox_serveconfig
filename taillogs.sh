@@ -37,4 +37,4 @@ ssh-keygen -R $VM_IP 2>/dev/null || true
 
 # Tail the logs
 echo "Tailing serve_config logs (Ctrl+C to stop)..."
-ssh -o StrictHostKeyChecking=accept-new your-username@$VM_IP "docker logs -f serve_config"
+ssh -o StrictHostKeyChecking=accept-new nathan@$VM_IP "docker logs -f serve_config"

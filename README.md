@@ -270,3 +270,29 @@ The VM should be accessible via its hostname.local address thanks to the avahi-d
 - [Proxmox Documentation](https://www.proxmox.com/en/downloads/category/documentation)
 - [Terraform Provider Documentation](https://registry.terraform.io/providers/bpg/proxmox/latest/docs)
 - [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/)
+## Environment Setup
+
+This project uses environment variables for configuration. To get started:
+
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` with your actual values:
+   ```bash
+   # Edit with your Proxmox details
+   nano .env
+   ```
+
+3. Test the setup:
+   ```bash
+   ./test-env.sh
+   ```
+
+4. Deploy as usual:
+   ```bash
+   ./deploy.sh
+   ```
+
+**Note:** The `.env` file contains your credentials and is gitignored for security.
