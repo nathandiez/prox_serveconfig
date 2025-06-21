@@ -8,7 +8,7 @@ variable "vm_name" {
 variable "node_name" {
   description = "Name of the Proxmox node"
   type        = string
-  default     = "proxmox-asus"
+  default     = "proxmox"
 }
 
 variable "tags" {
